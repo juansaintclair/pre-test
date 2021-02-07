@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/juansaintclair/pre-test/issues"
   },
-  "homepage": "https://github.com/juansaintclair/pre-test#readme"
+  "homepage": "https://github.com/juansaintclair/pre-test#readme",
+  "dependencies": {
+    "yarn": "^1.22.10"
+  }
 }
