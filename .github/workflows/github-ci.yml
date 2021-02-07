@@ -32,3 +32,14 @@ jobs:
         run: |
           yarn
           yarn test
+
+  deploy-dev:
+    runs-on: ubuntu-latest
+    environment:
+      name: dev
+      url: 'app.com'
+    needs:
+      build
+    steps:
+      name: 
+
