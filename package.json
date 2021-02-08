@@ -2,9 +2,11 @@
   "name": "pre-test",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack serve --config ./webpack.config.js --mode development",
+    "build": "webpack",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,18 @@
   },
   "homepage": "https://github.com/juansaintclair/pre-test#readme",
   "dependencies": {
+    "@babel/register": "^7.12.13",
+    "mocha": "^8.2.1",
     "yarn": "^1.22.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/plugin-transform-runtime": "^7.12.15",
+    "@babel/preset-env": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "chai": "^4.3.0",
+    "html-webpack-plugin": "^5.0.0",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
   }
 }
